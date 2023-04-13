@@ -1,0 +1,60 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+/*page*/
+@import url(../blocks/page/page.css);
+
+/*popup*/
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__content-container/popup__content-container.css);
+
+/*form*/
+@import url(../blocks/form/__toggle/form__toggle.css);
+@import url(../blocks/form/__toggle-image/form__toggle-image.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__container/form__container.css);
+@import url(../blocks/form/__heading/form__heading.css);
+@import url(../blocks/form/__input-container/form__input-container.css);
+@import url(../blocks/form/__item/form__item.css);
+@import url(../blocks/form/__button/form__button.css);
+
+/*list*/
+@import url(../blocks/list/list.css);
+
+/*button*/
+@import url(../blocks/button/button.css);
+
+/*header*/
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__logo/header__logo.css);
+
+/*main*/
+@import url(../blocks/main/main.css);
+
+/*profile*/
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__container/profile__container.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile/__details/profile__details.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__description/profile__description.css);
+@import url(../blocks/profile/__edit-button/profile__edit-button.css);
+@import url(../blocks/profile/__add-button/profile__add-button.css);
+
+/*cards*/
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__container/cards__container.css);
+
+/*card*/
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__image/card__image.css);
+@import url(../blocks/card/__name/card__name.css);
+@import url(../blocks/card/__title/card__title.css);
+@import url(../blocks/card/__heart-icon/card__heart-icon.css);
+@import url(../blocks/card/__heart-icon/_checked/card__heart-icon_checked.css);
+
+/*footer*/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);

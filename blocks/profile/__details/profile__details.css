@@ -1,0 +1,21 @@
+.profile__details {
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: 
+  "name edit"
+  "description edit";
+  align-items: center;
+}
+
+
+@media screen and (max-width: 767px) {
+  .profile__details {
+    margin: 26px 0 33px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+  "name edit"
+  "description description";
+  position: relative;
+  }
+}
