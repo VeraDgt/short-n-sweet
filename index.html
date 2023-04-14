@@ -11,11 +11,11 @@
 
 <body>
   <div class="page">
-    <div class="header">
-      <header class="header__container">
+    <header class="header">
+      <div class="header__content">
         <div class="header__logo"></div>
-      </header>
-    </div>
+      </div>
+    </header>
     <main class="main">
       <section class="profile">
         <div class="profile__container">
@@ -24,11 +24,11 @@
             <h1 class="profile__name">
               Жак-Ив Кусто</h1>
             <p class="profile__description">Исследователь океана</p>
-            <button class="button profile__edit-button" type="button"
+            <button type="submit" class="button profile__edit-button"
               aria-label="Изменить профиль пользователя"></button>
           </div>
         </div>
-        <button class="button profile__add-button" type="button" aria-label="Добавить пользователя"></button>
+        <button type="submit" class="button profile__add-button" aria-label="Добавить пользователя"></button>
       </section>
       <section class="cards">
         <ul class="cards__container list">
@@ -36,14 +36,14 @@
             <img class="card__image" src="images/karachaevsk.jpg" alt="Сентинский храм в Карачаево-Черкессии.">
             <div class="card__name">
               <h2 class="card__title">Карачаевск</h2>
-              <button class="button card__heart-icon card__heart-icon_checked"></button>
+              <button type="button" class="button card__heart-icon card__heart-icon_checked"></button>
             </div>
           </li>
           <li class="card">
             <img class="card__image" src="images/elbrus.jpg" alt="Вид на гору Эльбрус.">
             <div class="card__name">
               <h2 class="card__title">Гора Эльбрус</h2>
-              <button class="button card__heart-icon"></button>
+              <button type="button" class="button card__heart-icon"></button>
             </div>
           </li>
           <li class="card">
@@ -51,14 +51,14 @@
               alt="Белалакая. Вершина западной части главного хребта Большого Кавказа.">
             <div class="card__name">
               <h2 class="card__title">Домбай</h2>
-              <button class="button card__heart-icon"></button>
+              <button type="button" class="button card__heart-icon"></button>
             </div>
           </li>
           <li class="card">
             <img class="card__image" src="images/elbrus.jpg" alt="Вид на гору Эльбрус.">
             <div class="card__name">
               <h2 class="card__title">Гора Эльбрус</h2>
-              <button class="button card__heart-icon"></button>
+              <button type="button" class="button card__heart-icon"></button>
             </div>
           </li>
           <li class="card">
@@ -66,14 +66,14 @@
               alt="Белалакая. Вершина западной части главного хребта Большого Кавказа.">
             <div class="card__name">
               <h2 class="card__title">Домбай</h2>
-              <button class="button card__heart-icon"></button>
+              <button type="button" class="button card__heart-icon"></button>
             </div>
           </li>
           <li class="card">
             <img class="card__image" src="images/karachaevsk.jpg" alt="Сентинский храм в Карачаево-Черкессии.">
             <div class="card__name">
               <h2 class="card__title">Карачаево-Черкессия</h2>
-              <button class="button card__heart-icon"></button>
+              <button type="button" class="button card__heart-icon"></button>
             </div>
           </li>
         </ul>
@@ -84,7 +84,7 @@
     </footer>
     <div class="popup popup_opened">
       <div class="popup__content-container">
-        <img class="form__toggle-image" src="images/close-icon.svg" alt="Закрыть форму">
+        <button type="reset" class="button popup__toggle" aria-label="Закрыть форму"></button>
         <form class="form" action="URL">
           <h2 class="form__heading">Редактировать профиль</h2>
           <fieldset class="form__input-container">

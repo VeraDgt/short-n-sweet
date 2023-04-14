@@ -5,11 +5,7 @@
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 530px) {
-=======
-@media screen and (max-width: 510px) {
->>>>>>> 37b7b9078a89c45cdcadc5412d0135ef1c9c5fbb
   .form__input-container {
     padding-top: 32px;
   }
