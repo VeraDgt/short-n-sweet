@@ -24,7 +24,7 @@
 @import url(../blocks/button/button.css);
 
 /*header*/
-@import url(../blocks/header/__content/header__content.css);
+@import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
 
 /*main*/
