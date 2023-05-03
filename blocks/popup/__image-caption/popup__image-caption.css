@@ -1,0 +1,13 @@
+.popup__image-caption {
+  max-width: 818px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+  color: rgba(255, 255, 255, 1);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 10px;
+  width: 0;
+  min-width: 100%;
+}

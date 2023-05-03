@@ -1,4 +1,12 @@
 .popup__content-container {
   align-self: center;
   position: relative;
+  max-width: 86%;
+  max-height: 86%;
+}
+
+@media screen and (max-width: 530px) {
+  .popup__content-container {
+  max-width: 98%;
+  }
 }

@@ -4,11 +4,17 @@
 /*page*/
 @import url(../blocks/page/page.css);
 
+/*hidden*/
+@import url(../blocks/hidden/hidden.css);
+
 /*popup*/
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__content-container/popup__content-container.css);
 @import url(../blocks/popup/__toggle/popup__toggle.css);
+@import url(../blocks/popup/__image-wrapper/popup__image-wrapper.css);
+@import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup/__image-caption/popup__image-caption.css);
 
 /*form*/
 @import url(../blocks/form/form.css);
@@ -51,6 +57,7 @@
 @import url(../blocks/card/__title/card__title.css);
 @import url(../blocks/card/__heart-icon/card__heart-icon.css);
 @import url(../blocks/card/__heart-icon/_checked/card__heart-icon_checked.css);
+@import url(../blocks/card/__delete-button/card__delete-button.css);
 
 /*footer*/
 @import url(../blocks/footer/footer.css);

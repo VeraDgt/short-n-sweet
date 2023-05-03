@@ -19,8 +19,7 @@
         <div class="profile__container">
           <div class="profile__avatar"></div>
           <div class="profile__details">
-            <h1 class="profile__name">
-              Жак-Ив Кусто</h1>
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
             <p class="profile__description">Исследователь океана</p>
             <button type="button" class="button profile__edit-button"
               aria-label="Изменить профиль пользователя"></button>
@@ -30,60 +29,26 @@
       </section>
       <section class="cards">
         <ul class="cards__container list">
-          <li class="card">
-            <img class="card__image" src="images/karachaevsk.jpg" alt="Сентинский храм в Карачаево-Черкессии.">
-            <div class="card__name">
-              <h2 class="card__title">Карачаевск</h2>
-              <button type="button" class="button card__heart-icon card__heart-icon_checked"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="images/elbrus.jpg" alt="Вид на гору Эльбрус.">
-            <div class="card__name">
-              <h2 class="card__title">Гора Эльбрус</h2>
-              <button type="button" class="button card__heart-icon"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="images/dombay.jpg"
-              alt="Белалакая. Вершина западной части главного хребта Большого Кавказа.">
-            <div class="card__name">
-              <h2 class="card__title">Домбай</h2>
-              <button type="button" class="button card__heart-icon"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="images/elbrus.jpg" alt="Вид на гору Эльбрус.">
-            <div class="card__name">
-              <h2 class="card__title">Гора Эльбрус</h2>
-              <button type="button" class="button card__heart-icon"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="images/dombay.jpg"
-              alt="Белалакая. Вершина западной части главного хребта Большого Кавказа.">
-            <div class="card__name">
-              <h2 class="card__title">Домбай</h2>
-              <button type="button" class="button card__heart-icon"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="images/karachaevsk.jpg" alt="Сентинский храм в Карачаево-Черкессии.">
-            <div class="card__name">
-              <h2 class="card__title">Карачаево-Черкессия</h2>
-              <button type="button" class="button card__heart-icon"></button>
-            </div>
-          </li>
+          <template id="card">
+            <li class="card">
+              <img class="card__image" src="images/karachaevsk.jpg" alt="Фото места в России.">
+              <button type="button" class="button card__delete-button"></button>
+              <div class="card__name">
+                <h2 class="card__title">Карачаевск</h2>
+                <button type="button" class="button card__heart-icon"></button>
+              </div>
+            </li>
+          </template>
         </ul>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
-    <div class="popup popup_opened">
+    <div class="popup">
       <div class="popup__content-container">
         <button type="button" class="button popup__toggle" aria-label="Закрыть форму"></button>
-        <form class="form" action="URL">
+        <form class="form form-edit hidden" action="URL">
           <h2 class="form__heading">Редактировать профиль</h2>
           <fieldset class="form__input-container">
             <input class="form__item" type="text" name="user-name">
@@ -91,9 +56,21 @@
             <button type="submit" class="form__button">Сохранить</button>
           </fieldset>
         </form>
+        <form class="form form-add hidden" action="URL">
+          <h2 class="form__heading">Новое место</h2>
+          <fieldset class="form__input-container">
+            <input class="form__item" type="text" name="card-title" placeholder="Название" required>
+            <input class="form__item" type="text" name="card-link" placeholder="Ссылка на картинку" required>
+            <button type="submit" class="form__button">Сохранить</button>
+          </fieldset>
+        </form>
+        <figure class="popup__image-wrapper hidden"><img class="popup__image" src="images/karachaevsk.jpg">
+          <figcaption class="popup__image-caption">Карачаевск</figcaption>
+        </figure>
       </div>
     </div>
   </div>
+  <script src="pages/script.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,8 @@
   display: block;
   margin: 0;
   width: 100%;
+  aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+  cursor: pointer;
 }
