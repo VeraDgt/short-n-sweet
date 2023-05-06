@@ -13,3 +13,7 @@
   transition: opacity .3s ease;
   pointer-events: none;
 }
+
+#popup_image {
+  background-color: rgba(0, 0, 0, 0.9);
+}

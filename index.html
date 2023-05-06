@@ -45,18 +45,23 @@
     <footer class="footer">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
-    <div class="popup">
+    <div class="popup" id="popup_edit-profile">
       <div class="popup__content-container">
         <button type="button" class="button popup__toggle" aria-label="Закрыть форму"></button>
-        <form class="form form-edit hidden" action="URL">
+        <form class="form form-edit" action="URL">
           <h2 class="form__heading">Редактировать профиль</h2>
           <fieldset class="form__input-container">
-            <input class="form__item" type="text" name="user-name">
-            <input class="form__item" type="text" name="user-description">
+            <input class="form__item" type="text" placeholder="Имя" name="user-name">
+            <input class="form__item" type="text" placeholder="Вид деятельности" name="user-description">
             <button type="submit" class="form__button">Сохранить</button>
           </fieldset>
         </form>
-        <form class="form form-add hidden" action="URL">
+      </div>
+    </div>
+    <div class="popup" id="popup_add-card">
+      <div class="popup__content-container">
+        <button type="button" class="button popup__toggle" aria-label="Закрыть форму"></button>
+        <form class="form form-add" action="URL">
           <h2 class="form__heading">Новое место</h2>
           <fieldset class="form__input-container">
             <input class="form__item" type="text" name="card-title" placeholder="Название" required>
@@ -64,12 +69,18 @@
             <button type="submit" class="form__button">Сохранить</button>
           </fieldset>
         </form>
-        <figure class="popup__image-wrapper hidden"><img class="popup__image" src="images/karachaevsk.jpg">
-          <figcaption class="popup__image-caption">Карачаевск</figcaption>
+      </div>
+    </div>
+    <div class="popup" id="popup_image">
+      <div class="popup__content-container">
+        <button type="button" class="button popup__toggle" aria-label="Закрыть форму"></button>
+        <figure class="popup__image-wrapper"><img class="popup__image" src="" alt="">
+          <figcaption class="popup__image-caption"></figcaption>
         </figure>
       </div>
     </div>
   </div>
+  <script src="pages/constants.js"></script>
   <script src="pages/script.js"></script>
 </body>
 
